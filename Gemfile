@@ -1,11 +1,33 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '~> 0.2.6'
+gem 'mysql2'
+gem 'haml'
+gem 'will_paginate', '3.0.pre2'
+gem 'devise'
+gem 'acts-as-taggable-on', '~>2.1.0'
+gem 'jquery-rails'
+ 
+group :development, :test do
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'haml-rails'
+  gem 'hpricot'
+  gem 'ruby_parser'
+  gem 'web-app-theme'
+  
+  gem 'annotate', '2.4.0'
+  gem 'faker', '0.3.1'
+  
+  gem 'webrat', '0.7.1'
+  gem 'spork', '0.9.0.rc8'
+  gem 'factory_girl_rails', '1.0'
+end
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

@@ -1,0 +1,1 @@
+sudo install_name_tool -change libmysqlclient.18.dylib /usr/local/mysql/lib/libmysqlclient.18.dylib ~/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/mysql2-0.2.6/lib/mysql2/mysql2.bundle
